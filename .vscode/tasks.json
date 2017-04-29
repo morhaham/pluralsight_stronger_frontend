@@ -1,0 +1,29 @@
+
+{
+    "version": "2.0.0",
+		"tasks": [
+			{
+				// Sass
+				"taskName": "Sass-Compiler",
+				"command": "node-sass",
+    		"isShellCommand": true,
+			  "isBuildCommand": true,
+    		"args": ["--source-map","./css/styles.css.map", "./sass/styles.scss", "./css/styles.css", "./sass/","-w"]
+			},	
+			{
+				// PostCss - AutoPrefix
+				"taskName": "PostCss-AutoPrefix",
+			  "command": "postcss",
+				"isShellCommand": true,
+    		"args": ["./css/styles.css", "--use", "autoprefixer", "-d", "./css"]
+			}
+		]
+}
+			
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+
+/* Base styles
+-----------------------------------------------------*/
+
+html { 
+	box-sizing: border-box;
+	color: green;
+}
+
+
+*:after,*:before {
+	box-sizing: inherit;
+}
+
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+h1,
+h2,
+h3 {
+	margin: 0;
+	line-height: 1;
+}
+h1,
+h2 {
+	font-family: $pacifico;
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+}
+a:link {
+	color: #ed145a;
+}
+a:visited {
+	color: #ed145a;
+}
+a:hover {
+	color: #222;
+}
+a:active {
+	color: blue;
+}
+a:focus {
+	outline: none;
+	background: #ddd;
+}
+
+.content-wrapper {
+	width: 930px;
+	margin: 0 auto;  
+}
+

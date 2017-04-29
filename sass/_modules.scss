@@ -1,0 +1,16 @@
+/* Global header
+-----------------------------------------------------*/
+/* Includes global nav */
+
+.global-header {
+	position: relative;
+	padding: 30px 55px 22px;
+}
+.global-nav {
+	position: absolute;
+	top: 40px;
+	right: 55px;
+}
+.global-nav a {
+	text-transform: uppercase;
+}
