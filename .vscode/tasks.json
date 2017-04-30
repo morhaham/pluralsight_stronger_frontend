@@ -8,7 +8,7 @@
 				"command": "node-sass",
     		"isShellCommand": true,
 			  "isBuildCommand": true,
-    		"args": ["--source-map","./css/styles.css.map", "./sass/styles.scss", "./css/styles.css", "./sass/","-w"]
+    		"args": ["--source-map", "./css/styles.css.map", "./sass/styles.scss", "./css/styles.css","-w", "--output-style", "compressed",]
 			},	
 			{
 				// PostCss - AutoPrefix

@@ -1,63 +1,95 @@
 
 /* Base styles
 -----------------------------------------------------*/
-
+*{
+	margin: 0;
+	padding: 0;
+}
 html { 
 	box-sizing: border-box;
-	color: green;
 }
-
-
 *:after,*:before {
 	box-sizing: inherit;
 }
-
-
 body {
-	padding: 0;
-	margin: 0;
+	overflow-x: hidden;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
+	color: $black;
+	font-weight: normal;
 }
 h1,
 h2,
 h3 {
-	margin: 0;
 	line-height: 1;
+	padding: 10px 0 ;
+	font-weight: normal;
 }
 h1,
 h2 {
 	font-family: $pacifico;
 }
 h1 {
-	font-size: 48px;
+	font-size: $font-size-xl;
 }
 h2 {
-	font-size: 36px;
+	font-size: $font-size-l;
 }
 h3 {
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: $font-size-base;
+}
+p {
+	font-size: $font-size-xs;
+	padding: 3px 0;
+	word-wrap: break-word;
 }
 a:link {
-	color: #ed145a;
+	color: $link-color;
+	text-decoration: none;
 }
 a:visited {
-	color: #ed145a;
+	color: $link-color;
 }
 a:hover {
-	color: #222;
-}
-a:active {
-	color: blue;
-}
-a:focus {
-	outline: none;
-	background: #ddd;
+	color: $hover-color;
 }
 
+a:focus {
+	outline: none;
+	border: 1px dotted $grey;
+}
+
+ul,ol {
+	list-style: none;
+	padding: 6px 0;
+	font-size: $font-size-s;
+}
 .content-wrapper {
-	width: 930px;
+	position: relative;
+	width: 75%;
 	margin: 0 auto;  
+}
+
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.btn {
+	display: inline-block;
+	height:26px;
+	width: 70px;
+	background-color: $red;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: white;
+}
+
+.btn:focus {
+	outline: 1px dotted $grey;
 }
 

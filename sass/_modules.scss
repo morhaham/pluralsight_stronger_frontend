@@ -3,14 +3,149 @@
 /* Includes global nav */
 
 .global-header {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 85px;
+	background-color: white;
+	box-shadow: 0px 1px 1px #dddddd;
+}
+
+.global-header .content-wrapper {
 	position: relative;
-	padding: 30px 55px 22px;
+	top: 50%;
+	width: 90%;
+	transform: translateY(-50%);
 }
 .global-nav {
-	position: absolute;
-	top: 40px;
-	right: 55px;
+	position: relative;
+	width: 45%;
+	top: 20px;
+	float: right;
 }
+.global-header h1 {
+	position: relative;
+	width: 40%;
+	float: left;
+	font-weight: bold;
+}
+
 .global-nav a {
 	text-transform: uppercase;
+	padding: 8px;
+	margin: 0 8px;
 }
+
+/* Footer
+-----------------------------------------------------*/
+
+footer {
+	background-color: #181818;
+	width: 100%;
+	height: 250px;
+	position: relative;
+	bottom: 0;
+	color: #f5f5f5;
+	line-height: 1.6;
+}
+
+footer p, footer a, footer li {
+	font-size: $font-size-xs;
+}
+
+
+footer .content-wrapper {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+footer a:link {
+	color: $red;
+} 
+footer a:visited {
+	color: $red;
+}
+
+footer p {
+	font-size: $font-size-xs;
+}
+.footer-about {
+	width: 45%;
+	float: left;
+}
+
+
+.footer-credits {
+	float: right;
+	width: 30%;
+
+}
+
+footer h3 {
+	font-family: $pacifico;
+	text-transform: none;
+	font-weight: normal;
+}
+
+.footer-subcribe {
+	clear: both;
+	margin-top: 10px;
+	float: left;
+	width: 50%;
+}
+
+.footer-subcribe input {
+	height: 26px;
+	outline: none;
+	border: none;
+	padding: 0 5px;
+	border-radius: 3px;
+}
+
+.mail-input {
+	color: $black;
+}
+
+
+
+
+/* Main
+-----------------------------------------------------*/
+
+main {
+	line-height: 1.6;
+	width: 100%;
+	position: relative;
+}
+.feature-img {
+	width: 100%;
+	display: block;
+}
+
+/* Main-blogpost
+-----------------------------------------------------*/
+
+article.content-wrapper {
+	padding: 25px 0;
+}
+
+.post-header a:hover, .post-header a, .post-header a:active {
+	color: $red;
+	font-weight: bold;
+}
+
+.post-header {
+	margin-bottom: 20px;
+}
+
+.post-header p {
+	padding: 1px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+
+

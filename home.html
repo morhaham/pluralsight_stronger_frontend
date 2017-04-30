@@ -9,15 +9,17 @@
 </head>
 <body>
     <header class="global-header">
-        <h1>Everyday Meals</h1>
-        <nav class="global-nav">
-            <a href="/">About</a>
-            <a href="/">All Recipes</a>
-            <a href="/">Contact Us</a>
-        </nav>
+        <div class="content-wrapper clearfix">
+					<h1>Everyday Meals</h1>
+					<nav class="global-nav">
+							<a href="/">About</a>
+							<a href="/">All Recipes</a>
+							<a href="/">Contact Us</a>
+					</nav>
+				</div>
     </header>
     <main>
-			<img class="feature-img" src="https://source.unsplash.com/9RDmxIVLXXQ/1600x350" alt="Feature image">
+			<img class="feature-img" src="https://source.unsplash.com/9RDmxIVLXXQ/1400x500" alt="Feature image">
         <section class="content-wrapper">
             <h2>Featured Recipes</h2>
             <section>
@@ -54,24 +56,31 @@
                 <a href="/">Read more</a>
             </section>
         </section>
+				<section class="share">
+				</section>
     </main>
     <footer>
-        <div class="content-wrapper">
-            <section>
-                <h2>About</h2>
+        <div class="content-wrapper clearfix">
+            <section class="footer-about">
+                <h3>About</h3>
                 <p> Morbi ipsum nibh, porta vel bibendum faucibus, <a href="/">pulvinar et leo</a>. 
                  Cras molestie eget dui in auctor.
                 </p>
                 <p>In ipsum lorem, fringilla hendrerit diam vitae, aliquet posuere urna.</p>
             </section>
-            <section>
-                <h2>Credits</h2>
+            <section class="footer-credits">
+                <h3>Credits</h3>
                 <ul>
                     <li>Made by <a href="/">Mor Haham</a></li>
                     <li>Photos by <a href="/">Shutterstock</a></li>
                     <li>Fonts by <a href="/">Google Fonts</a></li>
                 </ul>
             </section>
+							<section class="footer-subcribe">
+								<p>Subcribe to get recipes to you'r mail!</p>
+								<input class="mail-input" type="text">
+								<input class="btn" type="button" value="Subcribe">
+						</section>
         </div>
     </footer>
 
