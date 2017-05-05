@@ -1,16 +1,19 @@
 
 /* Base styles
 -----------------------------------------------------*/
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
+
 html { 
 	box-sizing: border-box;
 }
-*:after,*:before {
+
+*, *:after, *:before {
 	box-sizing: inherit;
 }
+
 body {
 	overflow-x: hidden;
 	font-family: 'Open Sans', sans-serif;
@@ -67,12 +70,12 @@ ul,ol {
 }
 .content-wrapper {
 	position: relative;
-	width: 75%;
+	width: 70%;
 	margin: 0 auto;  
 }
 
 
-.clearfix::after {
+.content-wrapper::after {
 	content: '';
 	display: block;
 	clear: both;
@@ -80,13 +83,14 @@ ul,ol {
 
 .btn {
 	display: inline-block;
-	height:26px;
+	height:24px;
 	width: 70px;
 	background-color: $red;
-	border: none;
+	border: 1px outset $grey;
 	outline: none;
-	border-radius: 3px;
+	border-radius: 4px;
 	color: white;
+	font-weight: bold;
 }
 
 .btn:focus {

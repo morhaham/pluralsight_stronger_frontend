@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="global-header">
-        <div class="content-wrapper clearfix">
+        <div class="content-wrapper">
 					<h1>Everyday Meals</h1>
 					<nav class="global-nav">
 							<a href="/">About</a>
@@ -21,30 +21,31 @@
     <main>
 			<img class="feature-img" src="https://source.unsplash.com/9RDmxIVLXXQ/1400x500" alt="Feature image">
         <section class="content-wrapper">
-            <h2>Featured Recipes</h2>
-            <section>
-								<img src="https://source.unsplash.com/XJdGBDzsVho/250x250" alt="Pie for dinner ideas">
-                <h3>Dinner Ideas</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Sed porta, augue tincidunt ornare pulvinar, 
-                    velit dui hendrerit turpis, ut lobortis lorem libero sed nisi.
-                    Aliquam erat volutpat.
-                </p>
-                <a href="/">Read more</a>
+							<h2>Featured Recipes</h2>
+						 <div class="flex-container">
+						 <section class="flex-item">
+								 <img src="https://source.unsplash.com/XJdGBDzsVho/250x250" alt="Pie for dinner ideas">
+								 <h3>Dinner Ideas</h3>
+								 <p>
+										 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										 Sed porta, augue tincidunt ornare pulvinar, 
+										 velit dui hendrerit turpis, ut lobortis lorem libero sed nisi.
+										 Aliquam erat volutpat.
+								 </p>
+								 <a href="/">Read more</a>
+						 </section>
+						 <section class="flex-item">
+								 <img src="https://source.unsplash.com/DQdDD3iwt2I/250x250" alt="Beans for tasty sides">
+								 <h3>Tasty Sides</h3>
+									<p>
+										 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										 Sed porta, augue tincidunt ornare pulvinar, 
+										 velit dui hendrerit turpis, ut lobortis lorem libero sed nisi.
+										 Aliquam erat volutpat.
+								 </p>
+								 <a href="/">Read more</a>
             </section>
-            <section>
-								<img src="https://source.unsplash.com/DQdDD3iwt2I/250x250" alt="Beans for tasty sides">
-                <h3>Tasty Sides</h3>
-                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Sed porta, augue tincidunt ornare pulvinar, 
-                    velit dui hendrerit turpis, ut lobortis lorem libero sed nisi.
-                    Aliquam erat volutpat.
-                </p>
-                <a href="/">Read more</a>
-            </section>
-            <section>
+            <section class="flex-item">
 								<img src="https://source.unsplash.com/qpf2glK0bAA/250x250" alt="Macarons for deserts">
                 <h3>Sweets & Deserts</h3>
                 <p>
@@ -55,12 +56,13 @@
                 </p>
                 <a href="/">Read more</a>
             </section>
+						</div>
         </section>
 				<section class="share">
 				</section>
     </main>
     <footer>
-        <div class="content-wrapper clearfix">
+        <div class="content-wrapper">
             <section class="footer-about">
                 <h3>About</h3>
                 <p> Morbi ipsum nibh, porta vel bibendum faucibus, <a href="/">pulvinar et leo</a>. 
